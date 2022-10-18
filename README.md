@@ -1,0 +1,3 @@
+ # @lannuttia/fibonacci &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lannuttia/fibonacci/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/@lannuttia/fibonacci.svg?style=flat)](https://www.npmjs.com/package/@lannuttia/fibonacci)
+
+ This is a simple library for generating fibonacci numbers. The business logic for this library was lifted from [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators).

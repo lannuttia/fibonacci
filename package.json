@@ -1,0 +1,41 @@
+{
+  "name": "@lannuttia/fibonacci",
+  "version": "0.0.0",
+  "description": "A fibonacci number generator",
+  "main": "build/index.js",
+  "files": ["build/"],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src/",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "test:coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
+    "prepack": "npm run build",
+    "preversion": "npm run test",
+    "version": "npm run doc && git add -A src/ docs/",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lannuttia/fibonacci.git"
+  },
+  "keywords": [
+    "fibonacci"
+  ],
+  "author": "Anthony T. Lannutti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lannuttia/fibonacci/issues"
+  },
+  "homepage": "https://github.com/lannuttia/fibonacci#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
