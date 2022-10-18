@@ -12,7 +12,6 @@
     "test:coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
     "prepack": "npm run build",
     "preversion": "npm run test",
-    "version": "npm run doc && git add -A src/ docs/",
     "postversion": "git push && git push --tags"
   },
   "repository": {
