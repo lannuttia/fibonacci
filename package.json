@@ -6,6 +6,7 @@
   "files": ["build/"],
   "scripts": {
     "build": "tsc",
+    "ci": "npm run lint && npm run test:coverage",
     "lint": "eslint src/",
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
     "test:coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
