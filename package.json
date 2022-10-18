@@ -1,6 +1,6 @@
 {
   "name": "@lannuttia/fibonacci",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fibonacci number generator",
   "main": "build/index.js",
   "files": [
